@@ -1,0 +1,5 @@
+# idea specific
+.idea/
+assets/js/node_modules/
+*.iml
+_site/
