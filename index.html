@@ -52,7 +52,7 @@
   </header>
   <div class="container">
       <div class="row" ng-app = "skillsApp" ng-controller="skillsController" autoscroll="true">
-          <nav class="col-md-2 col-md-offset-2 hidden-sm bs-docs-sidebar">
+          <nav class="col-xs-2 col-md-2 col-md-offset-2 hidden-sm bs-docs-sidebar">
               <ul class="nav nav-list bs-docs-sidenav">
                   <li ng-repeat="cate in data" ng-class="{'active':activeCate === '<[cate.id]>'}">
                       <a href="#" id="<[cate.id]>" ng-click="toggleCate(cate.id); renderPage(cate.index);"><[cate.cate]></a>
@@ -64,7 +64,7 @@
                   </li>
               </ul>
           </nav>
-          <div class="col-md-6">
+          <div class="col-xs-10 col-md-6">
               <div myservice></div>
           </div>
       </div>
