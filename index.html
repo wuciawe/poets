@@ -35,12 +35,13 @@
       <script src="assets/js/bootstrap.min.js"></script>
       <script src="assets/js/angular.min.js"></script>
       <script src="assets/js/ng-script.js"></script>
+      <script src="assets/js/jquery.marquee.min.js"></script>
 
     <title>詩詞</title>
   </head>
 
   <body>
-  <header class="navbar navbar-static-top" role="navigation">
+  <header class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0px;">
       <div class="container">
           <div class="row">
               <!-- Brand and toggle get grouped for better mobile display -->
@@ -50,6 +51,28 @@
           </div>
       </div>
   </header>
+  <div class="container">
+      <div class="row">
+          <div class="hidden-xs col-sm-6 col-md-4 col-lg-3 pull-right">
+              <div class='marquee' style="overflow: hidden;color: rgba(215, 40, 40, 0.9);background-color: rgba(215, 255, 44, 0.9);border: 1px dashed rgba(215, 40, 40, 0.9);" >
+                  NOTICE: All content is gained from <a href="http://f5101231.idea.idv.tw/index6.html" target="_blank">不下300</a>, click <a href="http://f5101231.idea.idv.tw/index6.html" target="_blank">Here</a> to visit.
+              </div>
+              <script type="text/javascript">
+                  $('.marquee').marquee({
+                      duration: 10000,
+                      gap: 30,
+                      direction: 'left',
+                      duplicated: true,
+                      pauseOnHover: true
+                  });
+              </script>
+          </div>
+          <div class="col-sm-10 col-sm-offset-1 hidden-sm hidden-md hidden-lg" style="overflow: hidden;color: rgba(215, 40, 40, 0.9);background-color: rgba(215, 255, 44, 0.9);border: 1px dashed rgba(215, 40, 40, 0.9);" >
+              NOTICE: All content is gained from <a href="http://f5101231.idea.idv.tw/index6.html" target="_blank">不下300</a>.
+          </div>
+      </div>
+  </div>
+
   <div class="container">
       <div class="row" ng-app = "skillsApp" ng-controller="skillsController" autoscroll="true">
           <nav class="col-xs-2 col-md-2 col-md-offset-2 hidden-sm bs-docs-sidebar">
