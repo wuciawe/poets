@@ -36,7 +36,7 @@
       <script src="assets/js/angular.min.js"></script>
       <script src="assets/js/ng-script.js"></script>
       <script src="assets/js/jquery.marquee.min.js"></script>
-
+      <script src="assets/js/hammer.min.js"></script>
     <title>詩詞</title>
   </head>
 
@@ -82,9 +82,12 @@
       </div>
   </div>
 
+
+
   <div class="container">
       <div class="row" ng-app = "skillsApp" ng-controller="skillsController" autoscroll="true">
-          <nav class="col-xs-2 col-md-2 col-md-offset-2 hidden-sm bs-docs-sidebar">
+          <div id="ind" class="gradient" ng-click="ind()"></div>
+          <nav class="col-md-2 col-lg-2 col-md-offset-2 col-lg-offset-2 bs-docs-sidebar"  ng-class="{'col-xs-6':showind}" ng-show="showind">
               <ul class="nav nav-list bs-docs-sidenav">
                   <li ng-repeat="cate in data" ng-class="{'active':activeCate === '<[cate.id]>'}">
                       <a href="#" id="<[cate.id]>" ng-click="toggleCate(cate.id); renderPage(cate.index);"><[cate.cate]></a>
@@ -96,7 +99,7 @@
                   </li>
               </ul>
           </nav>
-          <div class="col-xs-10 col-md-6">
+          <div class="col-md-6 col-lg-6" ng-class="showind?'col-xs-6':'col-xs-12'">
               <div myservice></div>
           </div>
       </div>
@@ -115,6 +118,7 @@
           </div>
       </div>
   </footer>
+  <script src="assets/js/ind.js"></script>
 
 
   <script type="text/javascript">

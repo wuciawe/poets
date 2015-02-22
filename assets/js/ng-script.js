@@ -15,6 +15,7 @@
   SkillsController = (function() {
     function SkillsController($scope, $http, $sce, $timeout) {
       $scope.activePage = '#';
+      $scope.showind = true;
       $http.get('data.json').success(function(data) {
         return $scope.data = data;
       });
@@ -47,6 +48,9 @@
           return angular.element(rawEl).triggerHandler('click');
         }, 0);
       };
+      $scope.ind = function(){
+          $scope.showind = !$scope.showind;
+      }
     }
 
     return SkillsController;

@@ -19,53 +19,70 @@ footer a:hover{
   color: #428bca;
 }
 
+@media(max-width:991px){
+    #ind{
+        visibility: visible;
+        display: inline;
+        width: 10vw;
+        height: 10vw;
+        max-width: 50px;
+        max-height: 50px;
+        min-width: 30px;
+        min-height: 30px;
+        position: fixed;
+        z-index: 100;
+        border-radius: 50%;
+        left: 30vw;
+        top: 20vh;
+        background-color: rgba(67, 69, 67, 0.7);
+    }
+}
 
 /* all links */
 .bs-docs-sidebar .nav > li > a {
-  color: #999;
-  padding: 4px 20px;
-  /*add trasnparent border */
-  border-left: 2px solid transparent;
+    color: #999;
+    padding: 4px 20px;
+    /*add trasnparent border */
+    border-left: 2px solid transparent;
 }
 
 /* nested links */
 .bs-docs-sidebar .nav .nav > li > a {
-  padding-top: 1px;
-  padding-bottom: 1px;
-  padding-left: 30px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
 }
 
 /* active & hover links */
 .bs-docs-sidebar .nav > .active > a,
 .bs-docs-sidebar .nav > li > a:hover,
 .bs-docs-sidebar .nav > li > a:focus {
-  color: #563d7c;
-  text-decoration: none;
-  background-color: transparent;
-  border-left: 2px solid #563d7c;
+    color: #563d7c;
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 2px solid #563d7c;
 }
 
 /* all active links */
 .bs-docs-sidebar .nav > .active > a,
 .bs-docs-sidebar .nav > .active:hover > a,
 .bs-docs-sidebar .nav > .active:focus > a {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 /* nested active links */
 .bs-docs-sidebar .nav .nav > .active > a,
 .bs-docs-sidebar .nav .nav > .active:hover > a,
 .bs-docs-sidebar .nav .nav > .active:focus > a {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 /* hide all (inactive) nested list */
 .bs-docs-sidebar .nav ul.nav {
-  display: none;
+    display: none;
 }
 
 /* show active nested list */
 .bs-docs-sidebar .nav > .active > ul.nav {
-  display: block;
+    display: block;
 }
-
