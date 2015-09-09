@@ -38,6 +38,8 @@ footer a:hover{
     }
 }
 
+
+
 /* all links */
 .bs-docs-sidebar .nav > li > a {
     color: #999;
@@ -64,18 +66,18 @@ footer a:hover{
 }
 
 /* all active links */
-.bs-docs-sidebar .nav > .active > a,
-.bs-docs-sidebar .nav > .active:hover > a,
-.bs-docs-sidebar .nav > .active:focus > a {
-    font-weight: 700;
-}
+/*.bs-docs-sidebar .nav > .active > a,*/
+/*.bs-docs-sidebar .nav > .active:hover > a,*/
+/*.bs-docs-sidebar .nav > .active:focus > a {*/
+    /*font-weight: 700;*/
+/*}*/
 
 /* nested active links */
-.bs-docs-sidebar .nav .nav > .active > a,
-.bs-docs-sidebar .nav .nav > .active:hover > a,
-.bs-docs-sidebar .nav .nav > .active:focus > a {
-    font-weight: 500;
-}
+/*.bs-docs-sidebar .nav .nav > .active > a,*/
+/*.bs-docs-sidebar .nav .nav > .active:hover > a,*/
+/*.bs-docs-sidebar .nav .nav > .active:focus > a {*/
+    /*font-weight: 500;*/
+/*}*/
 
 /* hide all (inactive) nested list */
 .bs-docs-sidebar .nav ul.nav {
@@ -85,4 +87,21 @@ footer a:hover{
 /* show active nested list */
 .bs-docs-sidebar .nav > .active > ul.nav {
     display: block;
+}
+
+@media(min-width:992px){
+    body {
+        background-color: rgba(191, 215, 188, 0.48);
+    }
+    .bs-docs-sidebar {
+        font-size: larger;
+        font-weight: bold;
+    }
+    .bs-docs-sidebar .nav .nav > li > a:hover {
+        background-color: rgba(162, 71, 195, 0.13);
+        color: #fff;
+    }
+    .col-md-8 {
+        font-size: large;
+    }
 }
